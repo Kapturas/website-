@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Get Started — Kapturas</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@700;800&family=Barlow:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+  :root{--ink:#1c2b33;--paper:#fcfcfa;--orange:#f05a0e;--steel:#5c6b73;--line:#e4e2dc}
+  *{margin:0;padding:0;box-sizing:border-box}
+  body{font-family:'Barlow',system-ui,sans-serif;background:var(--paper);color:var(--ink);line-height:1.6;-webkit-font-smoothing:antialiased}
+  .wrap{max-width:640px;margin:0 auto;padding:0 24px}
+  header{border-bottom:3px solid var(--ink);padding:18px 0;margin-bottom:44px}
+  header .wrap{display:flex;align-items:center;justify-content:space-between;max-width:960px}
+  .logo{font-family:'Barlow Condensed',sans-serif;font-weight:800;font-size:26px;letter-spacing:.04em;text-transform:uppercase;color:var(--ink);text-decoration:none}
+  .logo span{color:var(--orange)}
+  nav a{font-size:14px;font-weight:600;color:var(--steel);text-decoration:none;margin-left:20px}
+  nav a:hover{color:var(--orange)}
+  h1{font-family:'Barlow Condensed',sans-serif;font-weight:800;font-size:42px;text-transform:uppercase;line-height:1}
+  .sub{color:var(--steel);margin:10px 0 30px;font-size:16px}
+  form{background:#fff;border:1px solid var(--line);padding:28px}
+  label{display:block;font-weight:600;font-size:14px;margin:16px 0 6px}
+  label:first-child{margin-top:0}
+  input[type=text],input[type=email],input[type=tel]{
+    width:100%;padding:11px 12px;border:1px solid var(--line);
+    font-family:'Barlow',sans-serif;font-size:16px;background:var(--paper)
+  }
+  input:focus{outline:2px solid var(--orange)}
+  .consent{
+    display:flex;gap:12px;align-items:flex-start;
+    margin:22px 0;padding:16px;border:1px solid var(--line);
+    border-left:4px solid var(--orange);background:var(--paper)
+  }
+  .consent input[type=checkbox]{margin-top:4px;width:18px;height:18px;flex-shrink:0}
+  .consent p{font-size:13.5px;line-height:1.55;color:var(--ink)}
+  .consent a{color:var(--orange)}
+  button{
+    width:100%;background:var(--orange);color:#fff;border:none;
+    font-family:'Barlow',sans-serif;font-weight:600;font-size:17px;
+    padding:14px;cursor:pointer;margin-top:6px
+  }
+  button:hover{background:#d84e08}
+  .note{font-size:13px;color:var(--steel);margin-top:14px}
+  footer{border-top:1px solid var(--line);margin-top:60px;padding:24px 0 44px;font-size:13px;color:var(--steel)}
+  footer .wrap{max-width:960px}
+  footer a{color:var(--steel)}
+</style>
+</head>
+<body>
+
+<header>
+  <div class="wrap">
+    <a class="logo" href="/">Kaptu<span>ras</span></a>
+    <nav><a href="/privacy.html">Privacy</a><a href="/terms.html">Terms</a><a href="mailto:hello@kapturas.com">Contact</a></nav>
+  </div>
+</header>
+
+<main class="wrap">
+  <h1>Get started</h1>
+  <p class="sub">Kapturas is onboarding pilot contractors. Fill this out and we'll set up your dedicated number within one business day.</p>
+
+  <form action="mailto:hello@kapturas.com" method="get" enctype="text/plain" onsubmit="return document.getElementById('smsconsent').checked">
+    <label for="name">Your name</label>
+    <input type="text" id="name" name="name" required>
+
+    <label for="company">Company name</label>
+    <input type="text" id="company" name="company" required>
+
+    <label for="trade">Trade (plumbing, electrical, roofing, restoration...)</label>
+    <input type="text" id="trade" name="trade" required>
+
+    <label for="email">Email</label>
+    <input type="email" id="email" name="email" required>
+
+    <label for="phone">Mobile number</label>
+    <input type="tel" id="phone" name="phone" placeholder="(813) 555-0100" required>
+
+    <div class="consent">
+      <input type="checkbox" id="smsconsent" name="sms_consent" value="yes" required>
+      <p><strong>I agree to receive job documentation text messages from Kapturas</strong> at the mobile number provided above. Message frequency varies based on job activity. Message and data rates may apply. Reply <strong>HELP</strong> for help or <strong>STOP</strong> to cancel at any time. Consent is not a condition of any purchase. See our <a href="/privacy.html">Privacy Policy</a> and <a href="/terms.html">Terms &amp; Conditions</a>.</p>
+    </div>
+
+    <button type="submit">Request pilot access</button>
+    <p class="note">You can also opt in later by texting START to your assigned Kapturas number. We'll never share your mobile number with third parties for marketing.</p>
+  </form>
+</main>
+
+<footer>
+  <div class="wrap">© 2026 Kapturas · <a href="/privacy.html">Privacy Policy</a> · <a href="/terms.html">Terms &amp; Conditions</a> · <a href="mailto:support@kapturas.com">support@kapturas.com</a></div>
+</footer>
+
+</body>
+</html>
