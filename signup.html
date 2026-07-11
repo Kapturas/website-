@@ -61,7 +61,7 @@
   <h1>Get started</h1>
   <p class="sub">Kapturas is onboarding pilot contractors. Fill this out and we'll set up your dedicated number within one business day.</p>
 
-  <form action="mailto:hello@kapturas.com" method="get" enctype="text/plain" onsubmit="return document.getElementById('smsconsent').checked">
+  <form action="mailto:hello@kapturas.com" method="get" enctype="text/plain">
     <label for="name">Your name</label>
     <input type="text" id="name" name="name" required>
 
@@ -78,12 +78,13 @@
     <input type="tel" id="phone" name="phone" placeholder="(813) 555-0100" required>
 
     <div class="consent">
-      <input type="checkbox" id="smsconsent" name="sms_consent" value="yes" required>
+      <input type="checkbox" id="smsconsent" name="sms_consent" value="yes">
       <p><strong>I agree to receive job documentation text messages from Kapturas</strong> at the mobile number provided above. Message frequency varies based on job activity. Message and data rates may apply. Reply <strong>HELP</strong> for help or <strong>STOP</strong> to cancel at any time. Consent is not a condition of any purchase. See our <a href="/privacy.html">Privacy Policy</a> and <a href="/terms.html">Terms &amp; Conditions</a>.</p>
     </div>
 
     <button type="submit">Request pilot access</button>
-    <p class="note">You can also opt in later by texting START to your assigned Kapturas number. We'll never share your mobile number with third parties for marketing.</p>
+    <p class="note">The SMS checkbox is optional — leave it unchecked and we'll onboard you by email instead. You can also opt in later by texting START to your assigned Kapturas number. We'll never share your mobile number with third parties for marketing.</p>
+    <p class="note">Submitting opens your email app with your details filled in — just hit send. Or email us directly at <a href="mailto:hello@kapturas.com">hello@kapturas.com</a>.</p>
   </form>
 </main>
 
